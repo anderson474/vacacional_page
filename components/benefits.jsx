@@ -4,10 +4,11 @@ import { useRef } from "react";
 
 
 const benefits = [
-  { icon: "📘", text: "Curso intensivo en vacaciones" },
-  { icon: "📝", text: "Material y simulacros incluidos" },
-  { icon: "👨‍🏫", text: "Profesores especializados" },
-  { icon: "📊", text: "Seguimiento personalizado" },
+  { icon: "📘", text: "2 semanas de formación academica" },
+  { icon: "📝", text: "Simulacros tipo icfes 11° y material de estudio" },
+  { icon: "👨‍🏫", text: "Actividades recreativas y deportivas" },
+  { icon: "📊", text: "Inmersión a la vida universitaria" },
+  { icon: "🏓", text: "Test de orientacion vocacional"},
 ];
 
 export default function Benefits() {
