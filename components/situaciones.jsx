@@ -33,7 +33,7 @@ export default function Situaciones() {
         {/* Columna derecha - video */}
         <div className="lg:w-1/2 w-full">
           <video
-            src="/videos/testimonioVacacional.mov"
+            src="/videos/testimonioVacacional.mp4"
             controls
             className="w-full rounded-lg shadow-lg"
           />
