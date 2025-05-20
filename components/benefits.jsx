@@ -6,9 +6,9 @@ import { useRef } from "react";
 const benefits = [
   { icon: "📘", text: "2 semanas de formación academica" },
   { icon: "📝", text: "Simulacros tipo icfes 11° y material de estudio" },
-  { icon: "👨‍🏫", text: "Actividades recreativas y deportivas" },
-  { icon: "📊", text: "Inmersión a la vida universitaria" },
-  { icon: "🏓", text: "Test de orientacion vocacional"},
+  { icon: "🏓", text: "Actividades recreativas y deportivas" },
+  { icon: "🎓", text: "Inmersión a la vida universitaria" },
+  { icon: "👨‍🏫", text: "Test de orientacion vocacional"},
 ];
 
 export default function Benefits() {
@@ -40,7 +40,7 @@ export default function Benefits() {
         <h2 className="text-3xl font-bold mb-10 text-black dark:text-white">
           ¿Qué incluye el programa?
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
           {benefits.map((b, i) => (
             <motion.div
               key={i}

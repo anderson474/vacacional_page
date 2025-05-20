@@ -5,11 +5,19 @@ import { TypeAnimation } from "react-type-animation";
 export default function Hero() {
   return (
     <section className="bg-white py-12 md:py-20 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      {/* Caja de beneficios de la Universidad de Medellín */}
+      <div className="absolute top-4 left-8 bg-white bg-opacity-90 border-l-4 border-[#96b422] p-4 rounded-lg shadow-lg max-w-xs z-50">
+            <h3 className="text-lg font-semibold text-gray-900">¡Beneficios especiales!</h3>
+            <ul className="mt-2 text-sm text-gray-700 list-disc list-inside">
+              <li>Beca del 100% con la Universidad de Medellín</li>
+              <li>20% de descuento en carreras profesionales</li>
+            </ul>
+          </div>
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-3">
 
         {/* VIDEO con fade-in */}
         <motion.div
-          className="w-full md:w-1/2 h-[500px] flex justify-center items-center"
+          className="relative w-full md:w-1/2 h-[500px] flex justify-center items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
@@ -23,7 +31,9 @@ export default function Hero() {
             controls
             className="h-full rounded-xl"
           />
+
         </motion.div>
+
 
         {/* TEXTO animado */}
         <motion.div
