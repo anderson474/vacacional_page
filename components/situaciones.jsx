@@ -12,9 +12,9 @@ export default function Situaciones() {
             <TypeAnimation
               sequence={[
                 "¿Te identificas con alguna de estas situaciones?", 
-                2000,
+                1000,
                 "Esta es la respuesta... ", 
-                2000,
+                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -22,11 +22,14 @@ export default function Situaciones() {
             />
           </h2>
           <ul className="space-y-4 text-gray-700 list-disc pl-5">
-            <li>Sientes que los cursos tradicionales no te motivan ni te preparan realmente para tu futuro.</li>
-            <li>Has querido encontrar una experiencia en la que puedas aprender, crecer y disfrutar al mismo tiempo.</li>
-            <li>Te emociona la idea de conocer una universidad por dentro antes de entrar a ella.</li>
+            <li>Sientes que los cursos de Pre-Saber 11º no te motivan ni te preparan realmente.</li>
+            <li>Sueñas con entrar a la universidad y empezar a vivirla desde ya</li>
             <li>Quisieras prepararte para el ICFES de una forma diferente, rodeado de expertos, amigos y actividades dinámicas.</li>
+            <li>Quieres estudiar tu carrera soñada totalmente gratis</li>
             <li>Sueñas con entrar a la universidad, pero también quisieras tener alguna ventaja o beneficio desde ya.</li>
+            <p className="font-bold text-2xl">¡Tenemos algo para ti!</p>
+            <li>Nuestro Vacacional Pre-Saber 11º con inmersión universitaria, una experiencia única del Grupo Educativo Avancemos en alianza con la Universidad de Medellín.</li>
+            <li>Durante dos semanas intensivas, vivirás un curso práctico y dinámico que te preparará para el examen, mientras exploras la vida universitaria desde adentro.</li>
           </ul>
         </div>
 

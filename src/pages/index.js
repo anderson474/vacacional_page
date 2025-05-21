@@ -5,8 +5,6 @@ import Methodology from "@components/methodology";
 import Details from "@components/details";
 import CTA from "@components/cta";
 import Situaciones from "@components/situaciones";
-import Presentacion from "@components/presentacion";
-import Incluye from "@components/incluye";
 import Aliado from "@components/aliado";
 import Beneficios from "@components/beneficios";
 import Bonus from "@components/bonus";
@@ -22,13 +20,12 @@ export default function Home() {
       <Benefits />
       <Methodology />
       <Situaciones />
-      <Presentacion />
-      <Incluye />
+      <Details />
       <Aliado />
       <Beneficios />
       <Bonus />
       <Inversion />
-      <Details />
+      
       <CTA />
     </Layout>
   );

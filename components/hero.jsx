@@ -1,19 +1,31 @@
 "use client";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="bg-white py-12 md:py-20 px-6">
-      {/* Caja de beneficios de la Universidad de Medellín */}
-      <div className="absolute top-4 left-8 bg-white bg-opacity-90 border-l-4 border-[#96b422] p-4 rounded-lg shadow-lg max-w-xs z-50">
-            <h3 className="text-lg font-semibold text-gray-900">¡Beneficios especiales!</h3>
-            <ul className="mt-2 text-sm text-gray-700 list-disc list-inside">
-              <li>Beca del 100% con la Universidad de Medellín</li>
-              <li>20% de descuento en carreras profesionales</li>
-            </ul>
-          </div>
+      
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-3">
+
+
+
+         <motion.div
+          className="w-60 h-60 absolute top-0.5 left-0"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, damping: 10 }}
+        >
+          <Image
+            src="/fondosestaticos/LOGO.png" // Ajusta al path correcto
+            alt="Logo Avancemos"
+            width={300}
+            height={300}
+          />
+        </motion.div>
+
+
 
         {/* VIDEO con fade-in */}
         <motion.div
@@ -35,44 +47,60 @@ export default function Hero() {
         </motion.div>
 
 
-        {/* TEXTO animado */}
+      {/* Contenedor flex con animación */}
+      <motion.div
+        className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-10"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+
+
+        {/* Caja de beneficios de la Universidad de Medellín */}
         <motion.div
-          className="w-full md:w-1/2 text-center md:text-left"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-          {/* Título con escritura */}
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-            <TypeAnimation
-              sequence={[
-                "Curso Vacacional Pre Saber", 
-                2000,
-                "Prepárate para el Saber 11", 
-                2000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </h1>
+        animate={{ scale: [1, 1.03, 1] }}
+        transition={{ duration: 2, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }}
+        className="bg-white bg-opacity-90 border-l-4 border-[#96b422] p-4 rounded-lg shadow-lg w-full max-w-xl"
+      >
+        <h3 className="text-2xl font-extrabold text-gray-900">¡Beneficios especiales!</h3>
+        <p className="mt-2 text-md text-gray-700">
+          Beca del 100% con la Universidad de Medellín al mejor puntaje del vacacional
+        </p>
+      </motion.div>
 
-          {/* Subtítulo */}
-          <p className="mt-4 text-lg text-gray-700">
-            Asegura tus resultados en vacaciones con un curso intensivo y práctico.
-          </p>
 
-          {/* Botón animado */}
-          <motion.a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeRkhiMz9icW0iNcCl9RWMhjpfHS5oG_7vZ9u4HUvJrnjkfsA/viewform"
-            target="_blank"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            className="mt-6 inline-block bg-[#96b422] hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded shadow"
-          >
-            Inscríbete ahora
-          </motion.a>
-        </motion.div>
+
+  {/* Título con escritura */}
+    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-20">
+      <TypeAnimation
+        sequence={[
+          "Preparate con nuestro vacacional Pre-Saber 11°",
+          2000
+          
+        ]}
+        wrapper="span"
+        speed={50}
+        repeat={Infinity}
+      />
+    </h1>
+
+    {/* Subtítulo */}
+    <p className="mt-2 text-lg text-gray-700">
+      Asegura tus resultados en vacaciones con un curso intensivo y práctico.
+    </p>
+
+    {/* Botón animado */}
+    <motion.a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeRkhiMz9icW0iNcCl9RWMhjpfHS5oG_7vZ9u4HUvJrnjkfsA/viewform"
+      target="_blank"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.98 }}
+      className="mt-4 inline-block bg-[#96b422] hover:bg-yellow-500 text-white font-semibold py-3 px-6 rounded shadow"
+    >
+      Inscríbete ahora
+    </motion.a>
+  </motion.div>
+
 
       </div>
     </section>

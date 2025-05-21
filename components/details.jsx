@@ -3,9 +3,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const items = [
-  { title: "Duración", desc: "4 semanas (junio-julio)" },
-  { title: "Modalidad", desc: "Presencial y virtual" },
-  { title: "Horario", desc: "Lunes a viernes, 8:00 a.m. - 12:00 m." },
+  { title: "Duración", desc: "2 semanas (16 -27 junio 2025)" },
+  { title: "Modalidad", desc: "Presencial" },
+  { title: "Horario", desc: "8:00 a.m. - 12:00 p.m.    1 p.m. - 5 p.m" },
+  { title: "Ubicación", desc: "📍 Universidad de Medellín. Carrera 87 N° 30 – 65, Medellín, Barrio Belén" },
 ];
 
 export default function Details() {
@@ -29,7 +30,7 @@ export default function Details() {
       />
 
       {/* Contenido con fondo translúcido */}
-      <div className="relative z-10 bg-white/80 dark:bg-gray-900/70 backdrop-blur-md rounded-xl max-w-5xl mx-auto px-4 py-12">
+      <div className="relative z-10 bg-white/80 dark:bg-gray-900/70 backdrop-blur-md rounded-xl max-w-[80%] mx-auto px-2 py-12">
         <h2 className="text-3xl font-bold mb-10 text-black dark:text-white">
           Información clave
         </h2>
@@ -37,7 +38,7 @@ export default function Details() {
           {items.map((item, idx) => (
             <motion.div
               key={idx}
-              className="bg-white dark:bg-gray-800 rounded-xl p-6 w-64 shadow"
+              className="bg-white dark:bg-gray-800 rounded-xl p-6 w-80 shadow"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.2 }}
