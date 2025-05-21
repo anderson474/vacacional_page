@@ -4,11 +4,11 @@ import { useRef } from "react";
 
 
 const benefits = [
-  { icon: "📘", text: "2 semanas de formación academica" },
-  { icon: "📝", text: "Simulacros tipo icfes 11° y material de estudio" },
+  { icon: "📘", text: "2 semanas de formación académica" },
+  { icon: "📝", text: "Simulacros tipo ICFES 11° y material de estudio" },
   { icon: "🏓", text: "Actividades recreativas y deportivas" },
   { icon: "🎓", text: "Inmersión a la vida universitaria" },
-  { icon: "👨‍🏫", text: "Test de orientacion vocacional"},
+  { icon: "👨‍🏫", text: "Test de orientación vocacional"},
 ];
 
 export default function Benefits() {

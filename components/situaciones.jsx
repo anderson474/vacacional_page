@@ -12,9 +12,9 @@ export default function Situaciones() {
             <TypeAnimation
               sequence={[
                 "¿Te identificas con alguna de estas situaciones?", 
-                1000,
+                5000,
                 "Esta es la respuesta... ", 
-                1000,
+                5000,
               ]}
               wrapper="span"
               speed={50}
@@ -23,9 +23,9 @@ export default function Situaciones() {
           </h2>
           <ul className="space-y-4 text-gray-700 list-disc pl-5">
             <li>Sientes que los cursos de Pre-Saber 11º no te motivan ni te preparan realmente.</li>
-            <li>Sueñas con entrar a la universidad y empezar a vivirla desde ya</li>
+            <li>Sueñas con entrar a la universidad y empezar a vivirla desde ya.</li>
             <li>Quisieras prepararte para el ICFES de una forma diferente, rodeado de expertos, amigos y actividades dinámicas.</li>
-            <li>Quieres estudiar tu carrera soñada totalmente gratis</li>
+            <li>Quieres estudiar tu carrera soñada totalmente gratis.</li>
             <li>Sueñas con entrar a la universidad, pero también quisieras tener alguna ventaja o beneficio desde ya.</li>
             <p className="font-bold text-2xl">¡Tenemos algo para ti!</p>
             <li>Nuestro Vacacional Pre-Saber 11º con inmersión universitaria, una experiencia única del Grupo Educativo Avancemos en alianza con la Universidad de Medellín.</li>

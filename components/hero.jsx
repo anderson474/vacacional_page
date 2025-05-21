@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 
 export default function Hero() {
@@ -22,6 +21,7 @@ export default function Hero() {
             alt="Logo Avancemos"
             width={300}
             height={300}
+            className=""
           />
         </motion.div>
 
@@ -29,7 +29,7 @@ export default function Hero() {
 
         {/* VIDEO con fade-in */}
         <motion.div
-          className="relative w-full md:w-1/2 h-[500px] flex justify-center items-center"
+          className="relative w-full md:w-1/2 h-[500px] flex justify-start items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
@@ -49,7 +49,7 @@ export default function Hero() {
 
       {/* Contenedor flex con animación */}
       <motion.div
-        className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-10"
+        className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left gap-5"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -71,17 +71,8 @@ export default function Hero() {
 
 
   {/* Título con escritura */}
-    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-20">
-      <TypeAnimation
-        sequence={[
-          "Preparate con nuestro vacacional Pre-Saber 11°",
-          2000
-          
-        ]}
-        wrapper="span"
-        speed={50}
-        repeat={Infinity}
-      />
+    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-10">
+      Préparate con nuestro vacacional Pre-Saber 11°
     </h1>
 
     {/* Subtítulo */}
