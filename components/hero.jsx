@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-white py-12 md:py-20 px-6">
+    <section className="bg-white py-5 md:py-10 px-6">
       
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-3">
+      <div className="max-w-7xl flex flex-col md:flex-row items-start gap-3">
 
 
 
          <motion.div
-          className="w-60 h-60 absolute top-0.5 left-0"
+          className="relative w-full md:w-1/2 h-full flex justify-center items-start"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 100, damping: 10 }}

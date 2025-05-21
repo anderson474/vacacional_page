@@ -9,6 +9,7 @@ export default function Inversion() {
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSeRkhiMz9icW0iNcCl9RWMhjpfHS5oG_7vZ9u4HUvJrnjkfsA/viewform"
           className="mt-6 inline-block bg-white hover:bg-[#305398] text-black font-bold py-3 px-6 rounded shadow"
+          target="_blank"
         >
           ¡Quiero inscribirme!
         </a>

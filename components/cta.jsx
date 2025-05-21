@@ -29,13 +29,13 @@ export default function CTA() {
               height={300}
             />
             <div className="flex justify-center md:justify-start gap-4 text-2xl text-[#96b422]">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/GrupoEducativoAvancemos/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/grupoeducativoavancemos/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@grupoeducativoavancemos" target="_blank" rel="noopener noreferrer">
                 <FaYoutube />
               </a>
             </div>
@@ -48,7 +48,7 @@ export default function CTA() {
               Al inscribirte en el curso aceptas nuestras políticas de tratamiento de datos y condiciones de participación.
             </p>
             <a
-              href="/pdfs/terminos-condiciones.pdf"
+              href="/pdfs/Documento Términos y Condiciones vacacional.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#96b422] text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition"
@@ -61,13 +61,12 @@ export default function CTA() {
           <div className="w-full">
             <h3 className="text-lg font-semibold mb-2 text-center lg:text-left">📍 Ubicación</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.803878857578!2d-75.59029552411618!3d6.244203093748482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44285cc96b629f%3A0x8382ae6d8989e33!2sUniversidad%20de%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1716234040006!5m2!1ses!2sco"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2436516604885!2d-75.61255342524943!3d6.231576693756599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44298d0551a085%3A0xd6c06b6158ba814d!2sUniversidad%20de%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1747831796914!5m2!1ses!2sco"
               width="100%"
               height="200"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
               className="rounded shadow"
             />
           </div>
