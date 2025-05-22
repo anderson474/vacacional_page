@@ -48,7 +48,7 @@ export default function CTA() {
               Al inscribirte en el curso aceptas nuestras políticas de tratamiento de datos y condiciones de participación.
             </p>
             <a
-              href="/pdfs/Documento Términos y Condiciones vacacional.pdf"
+              href="/pdfs/terminosycondicionesvacacional.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#96b422] text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition"
