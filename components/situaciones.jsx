@@ -9,17 +9,7 @@ export default function Situaciones() {
         {/* Columna izquierda - texto */}
         <div className="lg:w-1/2 text-left">
           <h2 className="text-3xl font-bold mb-6 text-gray-900 text-center lg:text-left">
-            <TypeAnimation
-              sequence={[
-                "¿Te identificas con alguna de estas situaciones?", 
-                5000,
-                "Esta es la respuesta... ", 
-                5000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            "¿Te identificas con alguna de estas situaciones?"
           </h2>
           <ul className="space-y-4 text-gray-700 list-disc pl-5">
             <li>Sientes que los cursos de Pre-Saber 11º no te motivan ni te preparan realmente.</li>
