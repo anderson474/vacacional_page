@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-white py-5 md:py-10 px-6">
+    <section className="bg-white py-5 md:py-10 px-1">
       
-      <div className="max-w-7xl flex flex-col md:flex-row items-start gap-3">
+      <div className="max-w-8xl flex flex-col md:flex-row items-start gap-3 mr-20">
 
 
 
@@ -71,7 +71,7 @@ export default function Hero() {
 
 
   {/* Título con escritura */}
-    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-10">
+    <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-10">
       Préparate con nuestro vacacional Pre-Saber 11°
     </h1>
 
