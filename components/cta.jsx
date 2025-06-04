@@ -11,6 +11,13 @@ export default function CTA() {
           href="https://wa.me/573052360841"
           target="_blank"
           className="inline-block bg-[#96b422] text-white px-6 py-3 rounded shadow hover:bg-gray-800"
+          onClick={() => {
+            if (typeof window !== 'undefined' && window.gtag) {
+              window.gtag('event', 'conversion', {
+                send_to: 'AW-10893318125/JzVpCK6WvdMaEO2vq8oo', // <-- Reemplaza con tu ID real de conversión
+              });
+            }
+      }}
         >
           Contáctanos por WhatsApp
         </a>
