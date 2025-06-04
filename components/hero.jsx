@@ -84,12 +84,21 @@ export default function Hero() {
     <motion.a
       href="https://docs.google.com/forms/d/e/1FAIpQLSeRkhiMz9icW0iNcCl9RWMhjpfHS5oG_7vZ9u4HUvJrnjkfsA/viewform"
       target="_blank"
+      rel="noopener noreferrer"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
       className="mt-4 inline-block bg-[#96b422] hover:bg-yellow-500 text-white font-semibold py-3 px-6 rounded shadow"
+      onClick={() => {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', {
+            send_to: 'AW-10893318125/JzVpCK6WvdMaEO2vq8oo', // <-- Reemplaza con tu ID real de conversión
+          });
+        }
+      }}
     >
       Inscríbete ahora
     </motion.a>
+
   </motion.div>
 
 
@@ -97,4 +106,5 @@ export default function Hero() {
     </section>
   );
 }
+
 
